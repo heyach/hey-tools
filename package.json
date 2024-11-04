@@ -1,0 +1,26 @@
+{
+  "name": "hey-tools",
+  "version": "1.0.0",
+  "description": "tools",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heyach/hey-tools"
+  },
+  "keywords": [],
+  "author": "heigaga@hey.com",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "terser-webpack-plugin": "^5.2.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {}
+}
