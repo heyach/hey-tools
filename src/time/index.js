@@ -1,4 +1,5 @@
 
+import dayjs from "dayjs";
 export const formatDate = (date, pattern) => {
     date = new Date(date);
     pattern = pattern || "yyyy-MM-dd";
@@ -19,4 +20,7 @@ export const formatDate = (date, pattern) => {
         });
     }
     return pattern;
+}
+export  const testDayjs = () => {
+    return dayjs().format('YYYY-MM-DD HH:mm:ss')
 }
