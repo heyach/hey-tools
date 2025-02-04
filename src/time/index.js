@@ -1,5 +1,6 @@
 
 import dayjs from "dayjs";
+// 格式化时间
 export const formatDate = (date, pattern) => {
     date = new Date(date);
     pattern = pattern || "yyyy-MM-dd";
@@ -21,6 +22,7 @@ export const formatDate = (date, pattern) => {
     }
     return pattern;
 }
-export  const testDayjs = () => {
+// 测试引入第三方库
+export  const testDayjs2 = () => {
     return dayjs().format('YYYY-MM-DD HH:mm:ss')
 }
