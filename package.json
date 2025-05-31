@@ -8,7 +8,7 @@
     "import": "./lib/index.esm.js",
     "require": "./lib/index.cjs.js"
   },
-  "files": ["lib"],
+  "files": ["src"],
   "scripts": {
     "lib": "webpack --config webpack.prod.js",
     "test": "jest"
