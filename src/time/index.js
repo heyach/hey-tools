@@ -22,7 +22,8 @@ export const formatDate = (date, pattern) => {
     }
     return pattern;
 }
-// 测试引入第三方库
-export  const testDayjs2 = () => {
-    return dayjs().format('YYYY-MM-DD HH:mm:ss')
+// 获取时间星期index，0是星期日，1是星期一 ...
+export const getDateWeekIndex = (date) => {
+    date = date instanceof Date ? date : new Date(date)
+    return dayjs(date).day()
 }

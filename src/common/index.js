@@ -1,7 +1,5 @@
 
-export const getUrlParamByKey = (key) => {
-    let url = window.location.href;
-
+export const getUrlParamByKey = (url, key) => {
     const urlObj = new URL(url);
 
     const params = new URLSearchParams(urlObj.search.slice(1));
