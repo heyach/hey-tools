@@ -2,7 +2,13 @@
   "name": "hey-tools",
   "version": "1.0.0",
   "description": "tools",
-  "main": "lib/index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "exports": {
+    "import": "./lib/index.esm.js",
+    "require": "./lib/index.cjs.js"
+  },
+  "files": ["lib"],
   "scripts": {
     "lib": "webpack --config webpack.prod.js",
     "test": "jest"

@@ -1,5 +1,6 @@
 
 export const getUrlParamByKey = (url, key) => {
+    console.log(url)
     const urlObj = new URL(url);
 
     const params = new URLSearchParams(urlObj.search.slice(1));
